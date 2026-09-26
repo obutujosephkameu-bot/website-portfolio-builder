@@ -49,6 +49,7 @@ const Footer = () => {
               <li><Link to="/blog" className="text-background/70 hover:text-secondary">Blog</Link></li>
               <li><Link to="/pricing-packages" className="text-background/70 hover:text-secondary">Pricing</Link></li>
               <li><Link to="/contact" className="text-background/70 hover:text-secondary">Contact</Link></li>
+              <li><a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-secondary">Software World (Our Group)</a></li>
             </ul>
           </div>
 

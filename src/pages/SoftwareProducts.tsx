@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { ExternalLink, Clock, GraduationCap, Users, ShoppingCart, Hotel, Stethoscope, Building2, Truck, Wallet, Boxes, ClipboardList, Download } from "lucide-react";
 import FloatingBubbles from "@/components/effects/FloatingBubbles";
 import { Link } from "react-router-dom";
+import AdminAddedItems from "@/components/portfolio/AdminAddedItems";
+import softwareWorldLogo from "@/assets/softwareworld-logo.png";
 
 const ready = [
   {
@@ -97,8 +99,20 @@ const SoftwareProducts = () => (
             </motion.a>
           ))}
         </div>
+        <AdminAddedItems collectionName="software" dark />
+        <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer"
+          className="mt-10 flex flex-col sm:flex-row items-center gap-6 rounded-2xl bg-background/10 border border-background/20 hover:border-secondary p-6 transition-all">
+          <div className="w-28 h-20 bg-background rounded-xl flex items-center justify-center shrink-0">
+            <img src={softwareWorldLogo} alt="Software World logo" className="max-h-16 w-auto object-contain" loading="lazy" />
+          </div>
+          <div className="text-center sm:text-left">
+            <h3 className="font-bold text-background text-xl">More software by our group — Software World</h3>
+            <p className="text-background/70 text-sm mt-1">We build more software under our Software World trade name. Visit softwareworld.co.ke <ExternalLink className="w-3.5 h-3.5 inline" /></p>
+          </div>
+        </a>
       </div>
     </section>
+
 
     {/* Coming soon */}
     <section className="py-16 relative">

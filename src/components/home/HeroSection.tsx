@@ -140,6 +140,11 @@ const HeroSection = () => {
                   <Boxes className="w-5 h-5" /> Software Development
                 </Link>
               </Button>
+              <Button asChild className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-primary-foreground h-12 px-6 shadow-lg shadow-primary/30">
+                <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer">
+                  <Cpu className="w-5 h-5" /> Software World (Our Group)
+                </a>
+              </Button>
             </motion.div>
 
             <motion.div

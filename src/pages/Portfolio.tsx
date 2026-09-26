@@ -14,6 +14,10 @@ import logoShani from "@/assets/shani-logo.png";
 import logoKibatia from "@/assets/kibatia-logo.png";
 import logoTopTank from "@/assets/toptank-logo.png";
 import logoPatrina from "@/assets/patrina-logo.png";
+import logoChinaVillage from "@/assets/chinavillage-logo.png";
+import logoSportsSparks from "@/assets/sportssparks-logo.png";
+import logoSoftwareWorld from "@/assets/softwareworld-logo.png";
+import AdminAddedItems from "@/components/portfolio/AdminAddedItems";
 
 const built = [
   { title: "Deborah Homes", url: "https://deborahhomes.co.ke", category: "Real Estate", logo: logoDeborah },
@@ -23,6 +27,9 @@ const built = [
   { title: "Rosben Accounting", url: "https://rosbenaccountingandconsultancy.co.ke", category: "Accounting", logo: logoRosben },
   { title: "Arizona International College", url: "https://arizonainternationalcollege.africa", category: "Higher Education", logo: logoArizonaCollege },
   { title: "Patrina Homes", url: "https://patrinahomes.co.ke", category: "Real Estate", logo: logoPatrina },
+  { title: "China Village", url: "https://chinavillage.co.ke", category: "Business", logo: logoChinaVillage },
+  { title: "Sports Sparks Africa", url: "https://sportssparks.org", category: "Sports", logo: logoSportsSparks },
+  { title: "Software World", url: "https://softwareworld.co.ke", category: "Our Software Group", logo: logoSoftwareWorld },
 ];
 
 const managed = [
@@ -73,6 +80,7 @@ const Portfolio = () => (
             </motion.a>
           ))}
         </div>
+        <AdminAddedItems collectionName="businesses" />
       </div>
     </section>
 
