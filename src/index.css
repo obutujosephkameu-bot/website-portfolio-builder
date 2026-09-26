@@ -179,16 +179,17 @@
 @keyframes caret { 50% { opacity: 0; } }
 .caret { display: inline-block; width: 4px; background: hsl(var(--secondary)); margin-left: 4px; animation: caret 1s step-end infinite; }
 
-/* Bubble-following cursor blob */
-.cursor-blob {
-  position: fixed; pointer-events: none; z-index: 9;
-  width: 360px; height: 360px; border-radius: 9999px;
-  background: radial-gradient(circle at 30% 30%, hsl(22 95% 55% / 0.18), transparent 60%),
-              radial-gradient(circle at 70% 70%, hsl(220 90% 52% / 0.18), transparent 60%);
-  filter: blur(40px);
-  transform: translate(-50%, -50%);
-  transition: transform 0.18s ease-out;
+/* High-definition water wake following fine pointers */
+.cursor-water-wake {
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  pointer-events: none;
   mix-blend-mode: multiply;
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .cursor-water-wake { display: none; }
 }
 
 /* Floating bubbles */
