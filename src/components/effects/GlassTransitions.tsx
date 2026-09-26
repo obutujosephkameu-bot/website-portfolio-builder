@@ -84,9 +84,9 @@ export default function GlassTransitions() {
       }
       document.body.appendChild(holder);
        // Only the visual original is hidden; its click handler and navigation run normally.
-       const previousOpacity = control.style.opacity;
-       control.style.opacity = "0";
-       window.setTimeout(() => { control.style.opacity = previousOpacity; holder.remove(); }, 1150);
+       const previousVisibility = control.style.visibility;
+       control.style.visibility = "hidden";
+       window.setTimeout(() => { control.style.visibility = previousVisibility; holder.remove(); }, 1150);
     };
     document.addEventListener("click", onClick, true);
     return () => document.removeEventListener("click", onClick, true);
