@@ -72,6 +72,7 @@ export default function GlassTransitions() {
          });
          piece.style.cssText = `position:absolute;inset:0;width:100%;height:100%;margin:0;max-width:none;min-width:0;pointer-events:none;animation:none;transition:none;transform:none;clip-path:${shard.clip};color:${computed.color};border-radius:${computed.borderRadius};`;
         piece.classList.add("glass-click-piece");
+         if (isCard) piece.classList.add("glass-card-piece");
          const spread = isCard ? 130 : 76;
          piece.style.setProperty("--piece-x", `${shard.x * spread + Math.sin(index * 7.3) * 27}px`);
          piece.style.setProperty("--piece-y", `${shard.y * spread + Math.cos(index * 5.1) * 28}px`);
