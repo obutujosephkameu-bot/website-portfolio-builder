@@ -34,6 +34,7 @@ import WebHostingKenya from "./pages/seo/WebHostingKenya";
 import SeoServicesKenya from "./pages/seo/SeoServicesKenya";
 import Blog from "./pages/seo/Blog";
 import ManagementSystemKenya from "./pages/seo/ManagementSystemKenya";
+import GlassTransitions from "./components/effects/GlassTransitions";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <GlassTransitions />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />

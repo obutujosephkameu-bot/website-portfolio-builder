@@ -201,3 +201,64 @@
   position: absolute; bottom: -50px; border-radius: 9999px;
   animation: bubble 14s linear infinite;
 }
+
+/* The glass transition is a pointer-transparent layer: it never delays navigation. */
+.glass-click-fragments {
+  position: fixed;
+  z-index: 110;
+  pointer-events: none;
+  overflow: visible;
+  perspective: 900px;
+  isolation: isolate;
+}
+.glass-click-piece {
+  animation: glass-click-break 700ms cubic-bezier(.18,.72,.28,1) both !important;
+  backface-visibility: hidden;
+  box-shadow: inset 0 0 1px hsl(var(--background) / .8);
+}
+@keyframes glass-click-break {
+  0% { opacity: .96; transform: translate3d(0,0,0) rotateY(0) scale(1); filter: brightness(1.35); }
+  42% { opacity: .9; }
+  100% { opacity: 0; transform: translate3d(var(--piece-x), var(--piece-y), 90px) rotateY(var(--piece-rotate)) scale(.82); filter: brightness(1.8); }
+}
+.glass-page-assembly {
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  pointer-events: none;
+  perspective: 1100px;
+  overflow: hidden;
+}
+.glass-assembly-piece {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(140deg, hsl(var(--background) / .63), hsl(var(--primary) / .32) 38%, hsl(var(--background) / .57) 67%, hsl(var(--secondary) / .22));
+  box-shadow: inset 0 0 20px hsl(var(--background) / .85), inset 0 0 2px hsl(var(--primary) / .85);
+  backdrop-filter: blur(7px);
+  animation: glass-reassemble 850ms cubic-bezier(.16,.75,.27,1) both;
+  backface-visibility: hidden;
+}
+@keyframes glass-reassemble {
+  0% { opacity: 0; transform: translate3d(var(--piece-x), var(--piece-y), 320px) rotateY(var(--piece-rotate)) scale(1.2); }
+  32% { opacity: .85; }
+  66% { opacity: .75; transform: translate3d(0,0,0) rotateY(0) scale(1); }
+  100% { opacity: 0; transform: translate3d(0,0,-50px) rotateY(0) scale(1); }
+}
+.glass-page-enter {
+  animation: glass-page-arrive 900ms cubic-bezier(.16,.75,.27,1) both;
+}
+.glass-page-enter h1, .glass-page-enter h2, .glass-page-enter h3 {
+  animation: glass-text-arrive 820ms cubic-bezier(.16,.8,.28,1) both;
+}
+@keyframes glass-page-arrive {
+  from { opacity: .25; transform: perspective(1100px) translateZ(-100px) scale(.95); filter: blur(9px); }
+  to { opacity: 1; transform: perspective(1100px) translateZ(0) scale(1); filter: blur(0); }
+}
+@keyframes glass-text-arrive {
+  from { opacity: 0; transform: perspective(850px) translateZ(-175px) translateY(20px); filter: blur(10px); }
+  to { opacity: 1; transform: perspective(850px) translateZ(0) translateY(0); filter: blur(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glass-click-fragments, .glass-page-assembly { display: none; }
+  .glass-page-enter, .glass-page-enter h1, .glass-page-enter h2, .glass-page-enter h3 { animation: none; }
+}
