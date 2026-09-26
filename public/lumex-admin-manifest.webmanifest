@@ -1,0 +1,14 @@
+{
+  "name": "LUMEX Admin",
+  "short_name": "LUMEX Admin",
+  "description": "Private administration console for Lumex Digital.",
+  "start_url": "/lumexadmin254kenyalost34657283tems14",
+  "scope": "/lumexadmin254kenyalost34657283tems14",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "icons": [
+    { "src": "/lumex-admin-icon.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/lumex-admin-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
