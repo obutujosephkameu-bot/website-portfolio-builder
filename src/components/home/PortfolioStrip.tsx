@@ -11,6 +11,8 @@ import logoShani from "@/assets/shani-logo.png";
 import logoKibatia from "@/assets/kibatia-logo.png";
 import logoTopTank from "@/assets/toptank-logo.png";
 import logoPatrina from "@/assets/patrina-logo.png";
+import logoChinaVillage from "@/assets/chinavillage-logo.png";
+import logoSportsSparks from "@/assets/sportssparks-logo.png";
 
 const sites = [
   { title: "Deborah Homes", url: "https://deborahhomes.co.ke", category: "Real Estate", logo: logoDeborah },
@@ -22,6 +24,8 @@ const sites = [
   { title: "Patrina Homes", url: "https://patrinahomes.co.ke", category: "Real Estate", logo: logoPatrina },
   { title: "Greenfield Real Estate", url: "https://greenfieldacademy.co.ke", category: "Real Estate", logo: logoGreenfield },
   { title: "Arizona Group", url: "https://arizonagroup.co.ke", category: "Conglomerate", logo: logoArizona },
+  { title: "China Village", url: "https://chinavillage.co.ke", category: "Business", logo: logoChinaVillage },
+  { title: "Sports Sparks Africa", url: "https://sportssparks.org", category: "Sports", logo: logoSportsSparks },
 ];
 
 const PortfolioStrip = () => (

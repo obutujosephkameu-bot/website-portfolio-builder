@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles, Code2, Cpu, Smartphone, Globe, Shield, AppWindow, Boxes } from "lucide-react";
 import logo from "@/assets/logo.png";
+import softwareWorldLogo from "@/assets/softwareworld-logo.png";
 import Typewriter from "@/components/effects/Typewriter";
 import CountUp from "@/components/effects/CountUp";
 import FloatingBubbles from "@/components/effects/FloatingBubbles";
@@ -140,9 +141,32 @@ const HeroSection = () => {
                   <Boxes className="w-5 h-5" /> Software Development
                 </Link>
               </Button>
-              <Button asChild className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 text-primary-foreground h-12 px-6 shadow-lg shadow-primary/30">
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.65 }}
+              className="mt-5 max-w-2xl"
+            >
+              <Button
+                asChild
+                className="group h-auto min-h-24 w-full justify-start whitespace-normal border border-secondary/50 bg-gradient-to-r from-primary via-primary to-secondary px-5 py-4 text-left text-primary-foreground shadow-xl shadow-primary/30 hover:scale-[1.01] hover:opacity-95 md:min-h-28 md:px-7"
+              >
                 <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer">
-                  <Cpu className="w-5 h-5" /> Software World (Our Group)
+                  <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-lg bg-background p-2 shadow-lg md:h-20 md:w-20">
+                    <img src={softwareWorldLogo} alt="Software World logo" className="max-h-full max-w-full object-contain" />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-xs font-bold uppercase text-primary-foreground/75 md:text-sm">
+                      Our software-building department
+                    </span>
+                    <span className="mt-1 block text-xl font-bold md:text-3xl">Software World</span>
+                    <span className="mt-1 block text-sm font-medium text-primary-foreground/80 md:text-base">
+                      Explore the systems and software we create
+                    </span>
+                  </span>
+                  <ArrowRight className="h-6 w-6 shrink-0 transition-transform group-hover:translate-x-1 md:h-8 md:w-8" />
                 </a>
               </Button>
             </motion.div>
