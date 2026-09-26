@@ -183,9 +183,8 @@
 .cursor-water-wake {
   position: fixed;
   inset: 0;
-  z-index: 9;
+  z-index: 45;
   pointer-events: none;
-  mix-blend-mode: multiply;
 }
 
 @media (pointer: coarse), (prefers-reduced-motion: reduce) {
