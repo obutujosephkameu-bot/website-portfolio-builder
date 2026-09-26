@@ -73,12 +73,12 @@ export default function GlassTransitions() {
          piece.style.cssText = `position:absolute;inset:0;width:100%;height:100%;margin:0;max-width:none;min-width:0;pointer-events:none;animation:none;transition:none;transform:none;clip-path:${shard.clip};color:${computed.color};border-radius:${computed.borderRadius};`;
         piece.classList.add("glass-click-piece");
          if (isCard) piece.classList.add("glass-card-piece");
-         const spread = isCard ? 130 : 76;
-         piece.style.setProperty("--piece-x", `${shard.x * spread + Math.sin(index * 7.3) * 27}px`);
-         piece.style.setProperty("--piece-y", `${shard.y * spread + Math.cos(index * 5.1) * 28}px`);
-         piece.style.setProperty("--piece-z", `${(index % 4) * 35 + 50}px`);
-         piece.style.setProperty("--piece-rotate", `${(index % 2 ? 1 : -1) * (65 + index % 5 * 18)}deg`);
-         piece.style.setProperty("--piece-tilt", `${(index % 3 - 1) * 78}deg`);
+         const spread = isCard ? 85 : 58;
+         piece.style.setProperty("--piece-x", `${shard.x * spread + Math.sin(index * 7.3) * 22}px`);
+         piece.style.setProperty("--piece-y", `${shard.y * spread + Math.cos(index * 5.1) * 22}px`);
+         piece.style.setProperty("--piece-z", `${(index % 4) * 24 + 35}px`);
+         piece.style.setProperty("--piece-rotate", `${(index % 2 ? 1 : -1) * (30 + index % 5 * 8)}deg`);
+         piece.style.setProperty("--piece-tilt", `${(index % 3 - 1) * 38}deg`);
          piece.style.animationDelay = `${index % 6 * 9}ms`;
         holder.appendChild(piece);
       }
