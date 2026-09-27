@@ -21,8 +21,8 @@ type Ripple = {
   angle: number;
 };
 
-const MAX_PARTICLES = 180;
-const MAX_RIPPLES = 22;
+const MAX_PARTICLES = 48;
+const MAX_RIPPLES = 7;
 
 const CursorBlob = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -67,7 +67,7 @@ const CursorBlob = () => {
     };
 
     const createWake = (speed: number, now: number) => {
-      if (!pointer.active || speed < 1.2 || now - lastSpawn < 13) return;
+      if (!pointer.active || speed < 1.2 || now - lastSpawn < 38) return;
       lastSpawn = now;
 
       const length = Math.max(speed, 0.001);
@@ -76,19 +76,19 @@ const CursorBlob = () => {
       const sideX = -ny;
       const sideY = nx;
       const intensity = Math.min(speed / 22, 1);
-      const count = 3 + Math.round(intensity * 6);
+      const count = 1 + Math.round(intensity * 2);
 
       for (let i = 0; i < count; i += 1) {
         const side = i % 2 === 0 ? -1 : 1;
         const spread = 7 + Math.random() * (18 + intensity * 18);
         const back = 9 + Math.random() * 34;
-        const life = 380 + Math.random() * 520;
+        const life = 280 + Math.random() * 320;
         addParticle({
           x: pointer.x - nx * back + sideX * spread * side,
           y: pointer.y - ny * back + sideY * spread * side,
           vx: -nx * (0.4 + Math.random() * 1.4) + sideX * side * (0.6 + Math.random() * 1.8),
           vy: -ny * (0.4 + Math.random() * 1.4) + sideY * side * (0.6 + Math.random() * 1.8) - Math.random() * 0.9,
-          size: 2.5 + Math.random() * (6 + intensity * 6),
+          size: 2 + Math.random() * (3 + intensity * 3),
           life,
           maxLife: life,
           kind: Math.random() > 0.3 ? "foam" : "drop",

@@ -18,6 +18,7 @@ import logoChinaVillage from "@/assets/chinavillage-logo.png";
 import logoSportsSparks from "@/assets/sportssparks-logo.png";
 import logoSoftwareWorld from "@/assets/softwareworld-logo.png";
 import AdminAddedItems from "@/components/portfolio/AdminAddedItems";
+import BuiltLogoMarquee from "@/components/portfolio/BuiltLogoMarquee";
 
 const built = [
   { title: "Deborah Homes", url: "https://deborahhomes.co.ke", category: "Real Estate", logo: logoDeborah },
@@ -118,11 +119,7 @@ const Portfolio = () => (
         <h2 className="text-center text-sm font-semibold uppercase tracking-wider text-muted-foreground mb-8">
           Trusted by businesses across Kenya
         </h2>
-        <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6">
-          {[...built, ...managed].map((c, i) => (
-            <img key={i} src={c.logo} alt={c.title} className="h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" loading="lazy" />
-          ))}
-        </div>
+        <BuiltLogoMarquee />
       </div>
     </section>
 

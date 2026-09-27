@@ -13,6 +13,7 @@ import logoTopTank from "@/assets/toptank-logo.png";
 import logoPatrina from "@/assets/patrina-logo.png";
 import logoChinaVillage from "@/assets/chinavillage-logo.png";
 import logoSportsSparks from "@/assets/sportssparks-logo.png";
+import BuiltLogoMarquee from "@/components/portfolio/BuiltLogoMarquee";
 
 const sites = [
   { title: "Deborah Homes", url: "https://deborahhomes.co.ke", category: "Real Estate", logo: logoDeborah },
@@ -84,6 +85,10 @@ const PortfolioStrip = () => (
             </div>
           </motion.a>
         ))}
+      </div>
+
+      <div className="mt-14">
+        <BuiltLogoMarquee />
       </div>
 
       {/* Domain CTA banner */}
