@@ -147,6 +147,33 @@
 .animate-marquee { animation: marquee 30s linear infinite; }
 .animate-marquee:hover { animation-play-state: paused; }
 
+/* Seamless left-to-right client logo loop */
+@keyframes built-logo-move {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.built-logo-track {
+  display: flex;
+  width: max-content;
+  animation: built-logo-move 42s linear infinite;
+}
+.built-logo-track:hover { animation-play-state: paused; }
+.built-logo-group { display: flex; flex: none; align-items: center; }
+.built-logo-item {
+  width: 10rem;
+  height: 5rem;
+  flex: none;
+  margin-inline: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (prefers-reduced-motion: reduce) {
+  .built-logo-track { animation: none; width: 100%; flex-wrap: wrap; justify-content: center; }
+  .built-logo-group { flex-wrap: wrap; justify-content: center; }
+  .built-logo-group:nth-child(2) { display: none; }
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }

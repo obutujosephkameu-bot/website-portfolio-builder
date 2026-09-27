@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, MessageCircle } from "lucide-react";
 import footerLogo from "@/assets/logo-footer.png";
+import VisitorReviews from "./VisitorReviews";
 
 const Footer = () => {
   return (
@@ -63,6 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
+        <VisitorReviews />
         <div className="border-t border-background/15 pt-8 text-center text-background/50 text-sm">
           © 2026 Lumex Digital. All rights reserved.
         </div>
