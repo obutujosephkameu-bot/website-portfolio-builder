@@ -32,7 +32,9 @@ const VisitorReviews = () => {
     setMessage("");
     const cleanName = name.trim();
     const cleanComment = comment.trim();
-    const { data, error } = await supabase.from("reviews")
+    const client = getReviewsClient();
+    if (!client) { setBusy(false); setMessage("Reviews are not available right now."); return; }
+    const { data, error } = await client.from("reviews")
       .insert({ name: cleanName, rating, comment: cleanComment })
       .select("id,name,rating,comment,created_at").single();
     setBusy(false);
