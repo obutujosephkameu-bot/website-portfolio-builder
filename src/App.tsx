@@ -34,6 +34,7 @@ import WebHostingKenya from "./pages/seo/WebHostingKenya";
 import SeoServicesKenya from "./pages/seo/SeoServicesKenya";
 import Blog from "./pages/seo/Blog";
 import ManagementSystemKenya from "./pages/seo/ManagementSystemKenya";
+import Careers from "./pages/Careers";
 import GlassTransitions from "./components/effects/GlassTransitions";
 
 const queryClient = new QueryClient();
@@ -59,6 +60,7 @@ const App = () => (
             <Route path="/member-dashboard" element={<MemberDashboard />} />
             <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/sales-admin" element={<SalesAdminDashboard />} />
+            <Route path="/careers" element={<Careers />} />
             <Route path="/join-us" element={<JoinUs />} />
             <Route path="/lumex" element={<LumexTeam />} />
             <Route path="/cybersecurity" element={<CyberSecurity />} />
