@@ -90,6 +90,18 @@ const Inner = () => {
           { name: "downloadUrl", label: "Download / Demo Link", type: "url" },
           { name: "platform", label: "Platform", type: "select", options: ["Android", "iOS", "Web App", "Desktop App"] },
         ]} />; break;
+    case "vacancies":
+      body = <CrudSection collectionName="vacancies" title="Career Vacancies" titleField="title"
+        fields={[
+          { name: "title", label: "Job Title" },
+          { name: "department", label: "Department", type: "select", options: ["Lumex Digital", "Software World", "Cyber Security", "Sales & Marketing", "Design", "Internship"] },
+          { name: "type", label: "Job Type", type: "select", options: ["Full-time", "Part-time", "Contract", "Remote", "Internship", "Commission"] },
+          { name: "location", label: "Location", placeholder: "Nairobi / Remote" },
+          { name: "salary", label: "Salary (optional)" },
+          { name: "deadline", label: "Application Deadline", type: "date" },
+          { name: "description", label: "Job Description", type: "textarea" },
+          { name: "requirements", label: "Requirements (one per line)", type: "textarea" },
+        ]} />; break;
     case "offers":
       body = <CrudSection collectionName="offers" title="Offers" titleField="title" imageField="image"
         fields={[

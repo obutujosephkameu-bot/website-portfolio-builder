@@ -15,6 +15,8 @@ Create these collections (Firestore auto-creates on first write, but list here f
 | `apps`                | Mobile apps we sell / built                            |
 | `offers`              | Active promos shown on the homepage `OffersStrip`      |
 | `settings`            | Site, SEO, branding, contact configuration documents   |
+| `vacancies`           | Open jobs posted by admin, shown on /careers           |
+| `careerApplications`  | Career applications from /careers (also copied to messages) |
 | `notificationTokens`  | FCM device tokens for push to admin                    |
 
 ### Example `offers` document
@@ -93,6 +95,16 @@ service cloud.firestore {
     match /businesses/{id} { allow read: if true; allow write: if isOwner(); }
     match /software/{id}   { allow read: if true; allow write: if isOwner(); }
     match /apps/{id}       { allow read: if true; allow write: if isOwner(); }
+    match /vacancies/{id}  { allow read: if true; allow write: if isOwner(); }
+
+    // PUBLIC: anyone can submit a career application; only owner reads.
+    match /careerApplications/{id} {
+      allow create: if request.resource.data.name is string
+        && request.resource.data.name.size() >= 2 && request.resource.data.name.size() <= 200
+        && request.resource.data.email is string && request.resource.data.email.size() <= 200
+        && request.resource.data.status == "new";
+      allow read, update, delete: if isOwner();
+    }
 
     // Public can read site settings (used for SEO/contact display).
     match /settings/{id} { allow read: if true; allow write: if isOwner(); }
