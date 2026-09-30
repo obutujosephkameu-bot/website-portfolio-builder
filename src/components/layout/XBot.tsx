@@ -18,7 +18,7 @@ const QUICK = [
 const KB: { match: (t: string) => boolean; reply: string }[] = [
  // Identity
  { match: (t) => /\b(who|what)\s+(is|are)\s+(lumex|rumex|limex)/.test(t) || /about\s+lumex/.test(t),
- reply: "Lumex Digital is a Kenyan technology company (founded 2020) building websites, mobile apps, business software, and cyber-security solutions. We've served 300+ clients across Kenya & Africa." },
+ reply: "Lumex Digital is a Kenyan technology company (founded 2010) building websites, mobile apps, business software, and cyber-security solutions. We've served 300+ clients across Kenya & Africa." },
 
  // Contacts
  { match: (t) => /(contact|phone|call|number|reach|whatsapp|email|address|location|where)/.test(t),

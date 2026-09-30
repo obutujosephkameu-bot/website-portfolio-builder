@@ -50,7 +50,9 @@ const Footer = () => {
               <li><Link to="/blog" className="text-background/70 hover:text-secondary">Blog</Link></li>
               <li><Link to="/pricing-packages" className="text-background/70 hover:text-secondary">Pricing</Link></li>
               <li><Link to="/contact" className="text-background/70 hover:text-secondary">Contact</Link></li>
+              <li><Link to="/careers" className="text-background/70 hover:text-secondary">Careers</Link></li>
               <li><a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer" className="text-background/70 hover:text-secondary">Software World (Our Group)</a></li>
+              <li className="text-background/50 text-xs leading-relaxed">Software World (softwareworld.co.ke) is owned by Lumex Digital — our software-building department.</li>
             </ul>
           </div>
 
