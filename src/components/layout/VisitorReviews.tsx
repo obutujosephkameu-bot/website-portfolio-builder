@@ -1,7 +1,7 @@
 import { FormEvent, useEffect, useState } from "react";
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/integrations/supabase/client";
+import { getReviewsClient } from "@/lib/reviewsClient";
 
 type Review = { id: string; name: string; rating: number; comment: string; created_at: string };
 
