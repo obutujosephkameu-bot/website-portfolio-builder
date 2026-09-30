@@ -56,7 +56,7 @@ const HeroSection = () => {
               className="inline-flex items-center gap-2 bg-secondary/15 backdrop-blur-md border border-secondary/30 text-secondary rounded-full px-4 py-2 mb-6 text-sm font-semibold"
             >
               <Sparkles className="w-4 h-4" />
-              Engineering digital excellence since 2020
+              Engineering digital excellence since 2010
             </motion.div>
 
             <motion.div
