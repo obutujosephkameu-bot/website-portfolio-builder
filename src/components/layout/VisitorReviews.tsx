@@ -1,7 +1,7 @@
 import { FormEvent, useEffect, useState } from "react";
 import { Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/integrations/supabase/client";
+import { getReviewsClient } from "@/lib/reviewsClient";
 
 type Review = { id: string; name: string; rating: number; comment: string; created_at: string };
 
@@ -32,7 +32,9 @@ const VisitorReviews = () => {
     setMessage("");
     const cleanName = name.trim();
     const cleanComment = comment.trim();
-    const { data, error } = await supabase.from("reviews")
+    const client = getReviewsClient();
+    if (!client) { setBusy(false); setMessage("Reviews are not available right now."); return; }
+    const { data, error } = await client.from("reviews")
       .insert({ name: cleanName, rating, comment: cleanComment })
       .select("id,name,rating,comment,created_at").single();
     setBusy(false);
