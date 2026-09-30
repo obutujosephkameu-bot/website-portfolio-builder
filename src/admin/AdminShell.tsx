@@ -4,13 +4,13 @@ import { ADMIN_PATH } from "@/lib/firebase-admin";
 import { useAdminPush } from "./useAdminPush";
 import {
   LayoutDashboard, MessageSquare, Mail, Briefcase, Cpu, Smartphone,
-  Tag, Settings, Search, Bell, ShieldCheck, LogOut, Menu, X, Sun, Moon,
+  Tag, Settings, UserPlus, Search, Bell, ShieldCheck, LogOut, Menu, X, Sun, Moon,
 } from "lucide-react";
 import logo from "@/assets/lumex-x.png";
 
 export type AdminSection =
   | "dashboard" | "messages" | "mail" | "businesses" | "software" | "apps"
-  | "offers" | "website" | "seo" | "notifications" | "settings";
+  | "vacancies" | "offers" | "website" | "seo" | "notifications" | "settings";
 
 const NAV: { key: AdminSection; label: string; icon: any }[] = [
   { key: "dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -19,6 +19,7 @@ const NAV: { key: AdminSection; label: string; icon: any }[] = [
   { key: "businesses", label: "Businesses Built", icon: Briefcase },
   { key: "software", label: "Software Built", icon: Cpu },
   { key: "apps", label: "Apps Built", icon: Smartphone },
+  { key: "vacancies", label: "Career Vacancies", icon: UserPlus },
   { key: "offers", label: "Offers", icon: Tag },
   { key: "website", label: "Website Settings", icon: Settings },
   { key: "seo", label: "SEO Settings", icon: Search },
