@@ -12,8 +12,8 @@ let client: SupabaseClient<Database> | null | undefined;
 
 export function getReviewsClient(): SupabaseClient<Database> | null {
   if (client !== undefined) return client;
-  const url = import.meta.env.VITE_SUPABASE_URL;
-  const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
+  const url = import.meta.env.VITE_SUPABASE_URL || "https://drcyqkpiigmvhymmbmva.supabase.co";
+  const key = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || "sb_publishable_Gd2bgkm0nAanZAjJ3YEhgg_a1qFYvyk";
   if (!url || !key) {
     client = null;
     return client;
