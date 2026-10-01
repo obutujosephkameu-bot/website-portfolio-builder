@@ -16,7 +16,9 @@ const VisitorReviews = () => {
 
   useEffect(() => {
     let active = true;
-    supabase.from("reviews").select("id,name,rating,comment,created_at").order("created_at", { ascending: false }).limit(6)
+    const db = getReviewsClient();
+    if (!db) return;
+    db.from("reviews").select("id,name,rating,comment,created_at").order("created_at", { ascending: false }).limit(6)
       .then(({ data, error }) => {
         if (!active) return;
         if (error) setMessage("Reviews could not be loaded right now.");
