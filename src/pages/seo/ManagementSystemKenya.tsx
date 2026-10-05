@@ -123,10 +123,10 @@ const ManagementSystemKenya = () => (
         priceCurrency: "KES",
       },
       description: "Scalable, offline-first, multi-business management platform for shops, supermarkets, pharmacies, salons, barber shops, water companies and WiFi providers in Kenya.",
-      url: "https://managementsystem.lumexdigital.co.ke",
+      url: "https://softwareworld.co.ke",
       publisher: { "@type": "Organization", name: "Lumex Digital", url: "https://lumexdigital.co.ke" },
     }}
-    externalCta={{ href: "https://managementsystem.lumexdigital.co.ke", label: "Open LUM-EX" }}
+    externalCta={{ href: "https://softwareworld.co.ke", label: "Open LUM-EX" }}
     finalCtaHeading="Power Your Business with LUM-EX"
     finalCtaBody="Request a free demo of LUM-EX and see how Lumex Digital can transform your shop, supermarket, pharmacy or service business with one intelligent platform."
   />

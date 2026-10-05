@@ -24,8 +24,8 @@ const INDEX: Item[] = [
   { title: "Contact Us", desc: "Phone, WhatsApp, email, location", to: "/contact", keywords: "contact phone whatsapp email address location reach call number 0706387820" },
   { title: "Lumex Team", desc: "Meet our team", to: "/lumex-team", keywords: "team members staff people" },
   { title: "Join Us / Careers", desc: "Work with Lumex", to: "/join-us", keywords: "career job hire join intern partner work" },
-  { title: "Buy Domain & Hosting", desc: "hosting.lumexdigital.co.ke — domains from KES 463", to: "https://hosting.lumexdigital.co.ke/", external: true, keywords: "domain hosting buy host cpanel ssl email .co.ke .com register transfer" },
-  { title: "School Management Software", desc: "Demo: schoolsoftware.lumexdigital.co.ke", to: "https://schoolsoftware.lumexdigital.co.ke/", external: true, keywords: "school software student management fees attendance exam parent sms" },
+  { title: "Buy Domain & Hosting", desc: "softwareworld.co.ke — domains from KES 463", to: "https://softwareworld.co.ke/", external: true, keywords: "domain hosting buy host cpanel ssl email .co.ke .com register transfer" },
+  { title: "School Management Software", desc: "Demo: softwareworld.co.ke", to: "https://softwareworld.co.ke/", external: true, keywords: "school software student management fees attendance exam parent sms" },
 ];
 
 const SearchButton = () => {

@@ -112,7 +112,7 @@ const PortfolioStrip = () => (
           </div>
           <div className="flex flex-wrap gap-3">
             <Button size="lg" asChild className="bg-white text-primary hover:bg-white/90 font-bold">
-              <a href="https://hosting.lumexdigital.co.ke/" target="_blank" rel="noopener noreferrer">
+              <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer">
                 Buy a Domain <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </Button>
