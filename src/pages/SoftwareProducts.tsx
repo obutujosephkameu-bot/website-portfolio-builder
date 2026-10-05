@@ -123,25 +123,48 @@ const SoftwareProducts = () => (
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold mb-10 text-background">Coming soon</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {coming.map((p, i) => (
-            <motion.div
-              key={p.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.04 }}
-              className="rounded-2xl p-5 border border-primary/30 bg-background/5 backdrop-blur"
-            >
-              <div className="w-11 h-11 rounded-xl bg-primary/20 text-primary flex items-center justify-center mb-3">
-                <p.Icon className="w-5 h-5" />
-              </div>
-              <div className="inline-flex items-center gap-1.5 bg-secondary/20 text-secondary text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">
-                <Clock className="w-3 h-3" /> SOON
-              </div>
-              <h3 className="font-bold text-background">{p.name}</h3>
-              <p className="text-background/60 text-xs mt-1">{p.desc}</p>
-            </motion.div>
-          ))}
+          {coming.map((p, i) => {
+            const card = (
+              <>
+                <div className="w-11 h-11 rounded-xl bg-primary/20 text-primary flex items-center justify-center mb-3">
+                  <p.Icon className="w-5 h-5" />
+                </div>
+                <div className="inline-flex items-center gap-1.5 bg-secondary/20 text-secondary text-[10px] font-bold px-2 py-0.5 rounded-full mb-2">
+                  <Clock className="w-3 h-3" /> SOON
+                </div>
+                <h3 className="font-bold text-background">{p.name}</h3>
+                <p className="text-background/60 text-xs mt-1">{p.desc}</p>
+              </>
+            );
+            const cls = "rounded-2xl p-5 border border-primary/30 bg-background/5 backdrop-blur";
+            return p.url ? (
+              <motion.a
+                key={p.name}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.04 }}
+                whileHover={{ y: -4 }}
+                className={`${cls} hover:border-secondary block`}
+              >
+                {card}
+              </motion.a>
+            ) : (
+              <motion.div
+                key={p.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.04 }}
+                className={cls}
+              >
+                {card}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
