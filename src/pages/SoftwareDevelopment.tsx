@@ -38,7 +38,7 @@ const SoftwareDevelopment = () => (
               </Link>
             </Button>
             <Button size="lg" variant="outline" asChild>
-              <a href="https://hosting.lumexdigital.co.ke/" target="_blank" rel="noopener noreferrer">
+              <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer">
                 <Globe2 className="w-4 h-4 mr-2" /> Buy Hosting & Domain
               </a>
             </Button>
