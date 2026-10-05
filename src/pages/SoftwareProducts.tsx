@@ -17,19 +17,23 @@ const ready = [
   {
     name: "Lumex HR Management System",
     desc: "Employees, payroll, leave, attendance, appraisals.",
-    url: "https://hrmlumex.lumexdigital.co.ke/",
+    url: "https://worldhrm.softwareworld.co.ke/",
     Icon: Users,
   },
 ];
 
 const coming = [
-  { name: "POS & Retail", desc: "Point of sale for shops & supermarkets.", Icon: ShoppingCart },
+  { name: "POS & Retail", desc: "Point of sale for shops & supermarkets.", url: "https://pos.softwareworld.co.ke/", Icon: ShoppingCart },
+  { name: "Accounting", desc: "Invoices, expenses, taxes, reports.", url: "https://accounting.softwareworld.co.ke/", Icon: Wallet },
+  { name: "CRM", desc: "Customers, leads, follow-ups, sales pipeline.", url: "https://crm.softwareworld.co.ke/", Icon: Handshake },
+  { name: "Payroll", desc: "Salaries, statutory deductions, payslips.", url: "https://payroll.softwareworld.co.ke/", Icon: Banknote },
+  { name: "Inventory", desc: "Stock, suppliers, purchases.", url: "https://inventory.softwareworld.co.ke/", Icon: Boxes },
+  { name: "Warehouse", desc: "Warehousing, storage, stock movement.", url: "https://warehouse.softwareworld.co.ke/", Icon: Warehouse },
+  { name: "Support Desk", desc: "Tickets, customer support, helpdesk.", url: "https://support.softwareworld.co.ke/", Icon: LifeBuoy },
   { name: "Hotel & Restaurant", desc: "Bookings, orders, kitchen & billing.", Icon: Hotel },
   { name: "Hospital & Clinic", desc: "Patients, appointments, billing, pharmacy.", Icon: Stethoscope },
   { name: "Real Estate", desc: "Properties, tenants, rent collection.", Icon: Building2 },
   { name: "Logistics & Fleet", desc: "Vehicles, drivers, routes, fuel.", Icon: Truck },
-  { name: "Accounting", desc: "Invoices, expenses, taxes, reports.", Icon: Wallet },
-  { name: "Inventory & Warehouse", desc: "Stock, suppliers, purchases.", Icon: Boxes },
   { name: "Church Management", desc: "Members, contributions, events.", Icon: ClipboardList },
 ];
 
