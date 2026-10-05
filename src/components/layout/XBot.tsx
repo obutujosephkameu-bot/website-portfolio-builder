@@ -34,7 +34,7 @@ const KB: { match: (t: string) => boolean; reply: string }[] = [
 
  // Software / Systems
  { match: (t) => /(school|sms|student|class).*(software|system|management)/.test(t) || /school software/.test(t),
- reply: "School Management System — fees, students, exams, attendance, parents portal, SMS. Demo: https://schoolsoftware.lumexdigital.co.ke/ — Call 0706 387 820 to deploy yours." },
+ reply: "School Management System — fees, students, exams, attendance, parents portal, SMS. Demo: https://softwareworld.co.ke/ — Call 0706 387 820 to deploy yours." },
  { match: (t) => /(hr|human resource|payroll|employee|staff).*(software|system)/.test(t) || /hr software/.test(t),
  reply: "HR & Payroll Management System — staff records, leave, payroll, NHIF/NSSF/PAYE, performance. Demo available. Call 0706 387 820 for pricing & deployment." },
  { match: (t) => /(pos|point of sale|inventory|stock|shop|retail).*(software|system)/.test(t),
@@ -46,7 +46,7 @@ const KB: { match: (t: string) => boolean; reply: string }[] = [
 
  // Domain / hosting
  { match: (t) => /(domain|hosting|host|website hosting|.co.ke|cpanel|email hosting)/.test(t),
- reply: "Domains & hosting at https://hosting.lumexdigital.co.ke/ • .co.ke from KES 463/yr • .com from KES 1,500/yr • Hosting from KES 2,500/yr with free SSL, cPanel, email accounts and daily backups." },
+ reply: "Domains & hosting at https://softwareworld.co.ke/ • .co.ke from KES 463/yr • .com from KES 1,500/yr • Hosting from KES 2,500/yr with free SSL, cPanel, email accounts and daily backups." },
 
  // Cyber security
  { match: (t) => /(cyber|security|hack|virus|antivirus|vpn|recover|firewall|pentest|penetration|breach|2fa|account hacked|facebook hack|whatsapp hack|instagram hack)/.test(t),

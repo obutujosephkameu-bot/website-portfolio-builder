@@ -11,7 +11,7 @@ const ready = [
   {
     name: "Lumex School Management System",
     desc: "Students, fees, exams, timetable, SMS to parents, reports.",
-    url: "https://schoolsoftware.lumexdigital.co.ke/",
+    url: "https://softwareworld.co.ke/",
     Icon: GraduationCap,
   },
   {
@@ -60,7 +60,7 @@ const SoftwareProducts = () => (
               <a href="https://wa.me/254706387820" target="_blank" rel="noopener noreferrer">Buy a Software</a>
             </Button>
             <Button size="lg" variant="outline" className="bg-background/10 border-background/30 text-background hover:bg-background/20" asChild>
-              <a href="https://hosting.lumexdigital.co.ke/" target="_blank" rel="noopener noreferrer">Buy Hosting & Domain</a>
+              <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer">Buy Hosting & Domain</a>
             </Button>
           </div>
         </div>
@@ -183,7 +183,7 @@ const SoftwareProducts = () => (
                 <Link to="/contact">Get a Quote</Link>
               </Button>
               <Button size="lg" variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20" asChild>
-                <a href="https://hosting.lumexdigital.co.ke/" target="_blank" rel="noopener noreferrer">Buy Hosting</a>
+                <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer">Buy Hosting</a>
               </Button>
             </div>
           </div>

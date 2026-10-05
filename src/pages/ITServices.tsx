@@ -41,7 +41,7 @@ const ITServices = () => (
           </p>
           <div className="flex flex-wrap gap-3">
             <Button size="lg" asChild>
-              <a href="https://hosting.lumexdigital.co.ke/" target="_blank" rel="noopener noreferrer">
+              <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer">
                 <Globe2 className="w-4 h-4 mr-2" /> Buy Hosting & Domain
               </a>
             </Button>
@@ -132,7 +132,7 @@ const ITServices = () => (
               </p>
             </div>
             <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground" asChild>
-              <a href="https://hosting.lumexdigital.co.ke/" target="_blank" rel="noopener noreferrer">Buy Hosting & Domain</a>
+              <a href="https://softwareworld.co.ke/" target="_blank" rel="noopener noreferrer">Buy Hosting & Domain</a>
             </Button>
           </div>
         </div>
