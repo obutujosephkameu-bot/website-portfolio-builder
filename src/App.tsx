@@ -35,7 +35,7 @@ import SeoServicesKenya from "./pages/seo/SeoServicesKenya";
 import Blog from "./pages/seo/Blog";
 import ManagementSystemKenya from "./pages/seo/ManagementSystemKenya";
 import Careers from "./pages/Careers";
-import GlassTransitions from "./components/effects/GlassTransitions";
+
 
 const queryClient = new QueryClient();
 
