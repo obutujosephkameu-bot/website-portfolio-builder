@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ExternalLink, Clock, GraduationCap, Users, ShoppingCart, Hotel, Stethoscope, Building2, Truck, Wallet, Boxes, ClipboardList, Download } from "lucide-react";
+import { ExternalLink, Clock, GraduationCap, Users, ShoppingCart, Hotel, Stethoscope, Building2, Truck, Wallet, Boxes, ClipboardList, Download, Handshake, Banknote, LifeBuoy, Warehouse } from "lucide-react";
 import FloatingBubbles from "@/components/effects/FloatingBubbles";
 import { Link } from "react-router-dom";
 import AdminAddedItems from "@/components/portfolio/AdminAddedItems";
