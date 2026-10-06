@@ -35,7 +35,7 @@ export const useAuth = () => {
   return ctx;
 };
 
-const MAIN_ADMIN_EMAIL = "linfiremj@gmail.com";
+const MAIN_ADMIN_EMAIL = "info@lumexdigital.co.ke";
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);

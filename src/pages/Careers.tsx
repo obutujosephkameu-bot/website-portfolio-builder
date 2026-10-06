@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { z } from "zod";
+import { CONTACT_EMAILS } from "@/lib/contactEmails";
 import {
   Briefcase, Code2, Smartphone, Shield, Megaphone, GraduationCap, MapPin, Clock, Send,
   CheckCircle2, Rocket, Users, HeartHandshake, Laptop, CalendarDays, Wallet,
@@ -114,7 +115,7 @@ const Careers = () => {
       setDone(true);
       setForm(empty);
     } catch {
-      setErrors({ form: "Could not send right now. Please email info@lumexdigital.co.ke or WhatsApp 0706 387 820." });
+      setErrors({ form: `Could not send right now. Please email ${CONTACT_EMAILS.careers} or WhatsApp 0706 387 820.` });
     } finally {
       setSending(false);
     }

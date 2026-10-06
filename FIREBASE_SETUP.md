@@ -64,8 +64,7 @@ service cloud.firestore {
 
     function isOwner() {
       return request.auth != null
-        && request.auth.uid == "NlOhkCy1W3ZtdjikVfzcMc9jrH73"
-        && request.auth.token.email == "linfiremj@gmail.com";
+        && request.auth.uid == "NlOhkCy1W3ZtdjikVfzcMc9jrH73";
     }
 
     // PUBLIC: anyone (signed-in or anonymous) can CREATE a contact message.
@@ -129,8 +128,7 @@ service firebase.storage {
   match /b/{bucket}/o {
     function isOwner() {
       return request.auth != null
-        && request.auth.uid == "NlOhkCy1W3ZtdjikVfzcMc9jrH73"
-        && request.auth.token.email == "linfiremj@gmail.com";
+        && request.auth.uid == "NlOhkCy1W3ZtdjikVfzcMc9jrH73";
     }
     match /public/{allPaths=**} {
       allow read: if true;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAdminAuth } from "./AdminAuthContext";
-import { adminAuth, ADMIN_UID, ADMIN_EMAIL } from "@/lib/firebase-admin";
+import { adminAuth, ADMIN_UID } from "@/lib/firebase-admin";
 import { updateProfile, updatePassword } from "firebase/auth";
 import { Bell, Send, ShieldCheck, KeyRound } from "lucide-react";
 
@@ -65,9 +65,9 @@ export const AdminSettingsSection = () => {
       <div className="bg-white/5 border border-white/10 rounded-xl p-4">
         <h3 className="font-bold flex items-center gap-2"><ShieldCheck className="w-4 h-4" /> Identity</h3>
         <div className="text-sm opacity-80 mt-2 space-y-1">
-          <div>Email: <span className="font-mono">{ADMIN_EMAIL}</span></div>
+          <div>Contact: <span className="font-mono">info@lumexdigital.co.ke</span></div>
           <div className="break-all">UID: <span className="font-mono text-xs">{ADMIN_UID}</span></div>
-          <div>Logged in as: <span className="font-mono text-xs">{user?.email}</span></div>
+          <div>Logged in as: <span className="font-mono text-xs">Lumex Administrator</span></div>
         </div>
       </div>
 

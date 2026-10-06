@@ -97,7 +97,7 @@ const AdminShell = ({ active, onChange, children, newCount = 0 }: Props) => {
             <button onClick={() => setDark((d) => !d)} className={`p-2 rounded-lg ${itemHover}`} title="Theme">
               {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
             </button>
-            <div className="text-xs opacity-70 hidden sm:block">{user?.email}</div>
+            <div className="text-xs opacity-70 hidden sm:block">Lumex Administrator</div>
           </div>
         </header>
         <main className="flex-1 p-4 md:p-6 overflow-x-hidden">{children}</main>
