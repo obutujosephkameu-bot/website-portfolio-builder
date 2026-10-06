@@ -31,10 +31,11 @@ import {
 import logo from "@/assets/logo.png";
 import { adminDb } from "@/lib/firebase-admin";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { CONTACT_EMAILS } from "@/lib/contactEmails";
 
 const WHATSAPP_NUMBER = "254706387820";
 const DISPLAY_PHONE = "+254 706 387 820";
-const TEAM_EMAIL = "linfiremj@gmail.com";
+const TEAM_EMAIL = CONTACT_EMAILS.sales;
 
 type ViewState = "form" | "success" | "error";
 

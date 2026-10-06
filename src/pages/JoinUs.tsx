@@ -7,8 +7,8 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Briefcase, Users, Gift, Send, Upload } from "lucide-react";
 import Layout from "@/components/layout/Layout";
+import { CONTACT_EMAILS } from "@/lib/contactEmails";
 
-const TARGET_EMAIL = "lumexdigital9@gmail.com";
 
 const JoinUs = () => {
   // Job Application state
@@ -31,7 +31,7 @@ const JoinUs = () => {
     const body = encodeURIComponent(
       `Full Name: ${jobName}\nEmail: ${jobEmail}\nPhone: ${jobPhone}\nPosition: ${jobPosition}\n\nMessage:\n${jobMessage}\n\n(Please attach CV to this email)`
     );
-    window.location.href = `mailto:${TARGET_EMAIL}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${CONTACT_EMAILS.careers}?subject=${subject}&body=${body}`;
   };
 
   const handleReferralSubmit = (e: React.FormEvent) => {
@@ -40,7 +40,7 @@ const JoinUs = () => {
     const body = encodeURIComponent(
       `Referrer Name: ${refName}\nReferrer Phone: ${refPhone}\n\nClient Name: ${clientName}\nClient Phone: ${clientPhone}\nClient Business Type: ${clientBusiness}`
     );
-    window.location.href = `mailto:${TARGET_EMAIL}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${CONTACT_EMAILS.sales}?subject=${subject}&body=${body}`;
   };
 
   return (

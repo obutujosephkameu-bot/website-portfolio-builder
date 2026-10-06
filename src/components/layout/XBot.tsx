@@ -78,7 +78,7 @@ const KB: { match: (t: string) => boolean; reply: string }[] = [
 
  // Careers / join
  { match: (t) => /(job|career|hire|join|intern|work with|partner)/.test(t),
- reply: "We hire developers, designers, marketers and sales partners. Apply at /join-us or email careers@lumexdigital.co.ke." },
+ reply: "We hire developers, designers, marketers and sales partners. Apply at /careers or email hr@lumexdigital.co.ke." },
 
  // Greetings
  { match: (t) => /^(hi|hello|hey|habari|niaje|sasa|mambo|good (morning|afternoon|evening))/.test(t),

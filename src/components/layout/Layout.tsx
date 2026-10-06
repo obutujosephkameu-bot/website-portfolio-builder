@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
 import XBot from "./XBot";
+import HelpButton from "./HelpButton";
 import CursorBlob from "@/components/effects/CursorBlob";
 import useClickSound from "@/hooks/useClickSound";
 
@@ -23,6 +24,7 @@ const Layout = ({ children, bg = "default" }: LayoutProps) => {
       <main className="flex-1 pt-[calc(5rem+1.75rem)] relative z-10">{children}</main>
       <Footer />
       <WhatsAppButton />
+      <HelpButton />
       <XBot />
     </div>
   );

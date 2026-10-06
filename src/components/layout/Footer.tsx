@@ -60,7 +60,13 @@ const Footer = () => {
             <h4 className="font-bold mb-4 text-secondary">Contact</h4>
             <ul className="space-y-2 text-sm text-background/70">
               <li><a href="https://wa.me/254706387820" className="hover:text-secondary">+254 706 387 820</a></li>
-              <li><a href="mailto:info@lumexdigital.co.ke" className="hover:text-secondary">info@lumexdigital.co.ke</a></li>
+              <li><a href="mailto:info@lumexdigital.co.ke" className="hover:text-secondary">General: info@lumexdigital.co.ke</a></li>
+              <li><a href="mailto:help@lumexdigital.co.ke" className="hover:text-secondary">Help: help@lumexdigital.co.ke</a></li>
+              <li><a href="mailto:sales@lumexdigital.co.ke" className="hover:text-secondary">Sales: sales@lumexdigital.co.ke</a></li>
+              <li><a href="mailto:support@lumexdigital.co.ke" className="hover:text-secondary">Support: support@lumexdigital.co.ke</a></li>
+              <li><a href="mailto:hr@lumexdigital.co.ke" className="hover:text-secondary">Careers: hr@lumexdigital.co.ke</a></li>
+              <li><a href="mailto:marketing@lumexdigital.co.ke" className="hover:text-secondary">Marketing: marketing@lumexdigital.co.ke</a></li>
+              <li><a href="mailto:worldsoftware@lumexdigital.co.ke" className="hover:text-secondary">Software: worldsoftware@lumexdigital.co.ke</a></li>
               <li>Nairobi, Kenya</li>
             </ul>
           </div>

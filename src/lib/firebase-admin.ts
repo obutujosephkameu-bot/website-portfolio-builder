@@ -24,7 +24,6 @@ export const adminAuth = getAuth(adminApp);
 export const adminDb = getFirestore(adminApp);
 export const adminStorage = getStorage(adminApp);
 
-export const ADMIN_EMAIL = "linfiremj@gmail.com";
 export const ADMIN_UID = "NlOhkCy1W3ZtdjikVfzcMc9jrH73";
 export const ADMIN_PATH = "/lumexadmin254kenyalost34657283tems14";
 
@@ -32,7 +31,7 @@ export const ADMIN_PATH = "/lumexadmin254kenyalost34657283tems14";
 export const FCM_VAPID_KEY = "";
 
 export const isOwner = (user: { uid?: string | null; email?: string | null } | null | undefined) =>
-  !!user && user.uid === ADMIN_UID && (user.email || "").toLowerCase() === ADMIN_EMAIL.toLowerCase();
+  !!user && user.uid === ADMIN_UID;
 
 export const getAdminMessaging = async (): Promise<Messaging | null> => {
   try {
