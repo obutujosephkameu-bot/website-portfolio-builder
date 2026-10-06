@@ -9,3 +9,5 @@
 - [x] Reduce the cursor water bubbles without removing the wake.
 - [x] Move built-website logos continuously from left to right on the homepage and portfolio.
 - [x] Let visitors submit five-star reviews in the footer and show submitted reviews on the page.
+- [ ] Replace old personal email references with the approved Lumex department addresses.
+- [ ] Add a public help icon that sends help requests into LUMEX Messages in the admin panel.
