@@ -59,27 +59,6 @@ const HeroSection = () => {
               Engineering digital excellence since 2010
             </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.15 }}
-              className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-6 px-5 py-3 rounded-2xl bg-gradient-to-r from-background/10 to-background/5 backdrop-blur border border-secondary/30 w-fit"
-            >
-              <span className="text-background/85 text-sm md:text-base font-semibold uppercase tracking-wide">Get a website from as low as</span>
-              <span
-                className="font-extrabold text-4xl md:text-6xl leading-none"
-                style={{
-                  background: "linear-gradient(180deg, #FFE27A 0%, #F5C518 35%, #B8860B 70%, #8B6508 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  textShadow: "0 2px 0 rgba(0,0,0,.25), 0 6px 18px rgba(245,197,24,.45)",
-                  filter: "drop-shadow(0 4px 6px rgba(184,134,11,.6))",
-                }}
-              >
-                KES 13,444/-
-              </span>
-              <span className="text-secondary text-sm md:text-base font-bold">+ FREE .co.ke domain</span>
-            </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
