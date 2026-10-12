@@ -30,4 +30,5 @@
   <!-- Software World is owned by Lumex Digital (our software-building department) -->
   <url><loc>https://softwareworld.co.ke/</loc><priority>0.8</priority><changefreq>weekly</changefreq></url>
   <url><loc>https://worldhrm.softwareworld.co.ke/</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://edu.softwareworld.co.ke/</loc><priority>0.7</priority><changefreq>weekly</changefreq></url>
 </urlset>
