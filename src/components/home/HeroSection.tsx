@@ -12,7 +12,7 @@ import bannerBackground from "@/assets/homepage-banner-background.png.asset.json
 const HeroSection = () => {
   return (
     <section className="relative min-h-[94vh] flex items-center overflow-hidden">
-      <img src={bannerBackground.url} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
+      <img src={new URL(bannerBackground.url, "https://id-preview--aa5b6b3d-ff3f-4816-a358-caf526c4b257.lovable.app").href} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
       <FloatingBubbles count={32} />
 
       {/* Floating coding icons */}
