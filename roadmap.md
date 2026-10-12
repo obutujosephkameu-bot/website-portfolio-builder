@@ -11,3 +11,5 @@
 - [x] Let visitors submit five-star reviews in the footer and show submitted reviews on the page.
 - [x] Replace old personal email references with the approved Lumex department addresses.
 - [x] Add a public help icon that sends help requests into LUMEX Messages in the admin panel.
+- [x] Make the homepage Software World banner button larger with clearer wording.
+- [x] Rebuild and package a fresh upload file for Netlify.
