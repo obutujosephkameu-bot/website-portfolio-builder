@@ -78,6 +78,7 @@
   * { @apply border-border; }
   body {
     @apply bg-background text-foreground;
+    font-size: calc(1rem + 3px);
     font-family: 'Inter', system-ui, sans-serif;
     background-color: hsl(var(--background));
     background-image:
@@ -227,5 +228,18 @@
 .bubble {
   position: absolute; bottom: -50px; border-radius: 9999px;
   animation: bubble 14s linear infinite;
+}
+
+/* Match the global text increase for existing custom-sized labels. */
+@layer utilities {
+  .text-\[9px\] { font-size: 12px; }
+  .text-\[10px\] { font-size: 13px; }
+  .text-\[11px\] { font-size: 14px; }
+  .text-\[12px\] { font-size: 15px; }
+  .text-\[13px\] { font-size: 16px; }
+  .text-\[0\.8rem\] { font-size: calc(0.8rem + 3px); }
+  @media (min-width: 1024px) {
+    .lg\:text-\[5\.5rem\] { font-size: calc(5.5rem + 3px); }
+  }
 }
 

@@ -13,6 +13,21 @@ export default {
       },
     },
     extend: {
+      fontSize: {
+        xs: ["calc(0.75rem + 3px)", { lineHeight: "calc(1rem + 3px)" }],
+        sm: ["calc(0.875rem + 3px)", { lineHeight: "calc(1.25rem + 3px)" }],
+        base: ["calc(1rem + 3px)", { lineHeight: "calc(1.5rem + 3px)" }],
+        lg: ["calc(1.125rem + 3px)", { lineHeight: "calc(1.75rem + 3px)" }],
+        xl: ["calc(1.25rem + 3px)", { lineHeight: "calc(1.75rem + 3px)" }],
+        "2xl": ["calc(1.5rem + 3px)", { lineHeight: "calc(2rem + 3px)" }],
+        "3xl": ["calc(1.875rem + 3px)", { lineHeight: "calc(2.25rem + 3px)" }],
+        "4xl": ["calc(2.25rem + 3px)", { lineHeight: "calc(2.5rem + 3px)" }],
+        "5xl": ["calc(3rem + 3px)", { lineHeight: "1" }],
+        "6xl": ["calc(3.75rem + 3px)", { lineHeight: "1" }],
+        "7xl": ["calc(4.5rem + 3px)", { lineHeight: "1" }],
+        "8xl": ["calc(6rem + 3px)", { lineHeight: "1" }],
+        "9xl": ["calc(8rem + 3px)", { lineHeight: "1" }],
+      },
       fontFamily: {
         sans: ["Montserrat", "system-ui", "sans-serif"],
       },
