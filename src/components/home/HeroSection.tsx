@@ -7,26 +7,13 @@ import softwareWorldLogo from "@/assets/softwareworld-logo.png";
 import Typewriter from "@/components/effects/Typewriter";
 import CountUp from "@/components/effects/CountUp";
 import FloatingBubbles from "@/components/effects/FloatingBubbles";
+import bannerBackground from "@/assets/homepage-banner-background.png.asset.json";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-[94vh] flex items-center overflow-hidden">
-      {/* Layered animated background */}
-      <div className="absolute inset-0 lumex-dark-bg" />
-      <div className="absolute inset-0 lumex-grid-bg opacity-70" />
+      <img src={bannerBackground.url} alt="" aria-hidden="true" className="absolute inset-0 h-full w-full object-cover" />
       <FloatingBubbles count={32} />
-
-      {/* 3D orbs */}
-      <motion.div
-        animate={{ scale: [1, 1.25, 1], x: [0, 60, 0], y: [0, -40, 0] }}
-        transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-10 right-10 w-[520px] h-[520px] bg-secondary/60 rounded-full blur-3xl"
-      />
-      <motion.div
-        animate={{ scale: [1.2, 1, 1.2], x: [0, -40, 0], y: [0, 50, 0] }}
-        transition={{ duration: 16, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-0 left-0 w-[640px] h-[640px] bg-primary/60 rounded-full blur-3xl"
-      />
 
       {/* Floating coding icons */}
       {[
@@ -37,7 +24,7 @@ const HeroSection = () => {
       ].map(({ Icon, x, y, d }, i) => (
         <motion.div
           key={i}
-          className="absolute text-secondary/40"
+          className="absolute text-primary/60"
           style={{ left: x, top: y }}
           animate={{ y: [0, -22, 0], rotate: [0, 8, -8, 0] }}
           transition={{ duration: 6 + i, repeat: Infinity, delay: d, ease: "easeInOut" }}
@@ -53,7 +40,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="inline-flex items-center gap-2 bg-secondary/15 backdrop-blur-md border border-secondary/30 text-secondary rounded-full px-4 py-2 mb-6 text-sm font-semibold"
+              className="inline-flex items-center gap-2 bg-background/80 backdrop-blur-md border border-primary/30 text-primary rounded-full px-4 py-2 mb-6 text-sm font-semibold"
             >
               <Sparkles className="w-4 h-4" />
               Engineering digital excellence since 2010
@@ -64,10 +51,10 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-background mb-4 leading-[1.05]"
+              className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-lumex-dark mb-4 leading-[1.05]"
             >
               We build{" "}
-              <span className="text-secondary block md:inline">
+              <span className="text-primary block md:inline">
                 <Typewriter words={["websites.", "mobile apps.", "software.", "secure systems."]} />
               </span>
             </motion.h1>
@@ -76,7 +63,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-lg md:text-xl text-background/75 mb-10 max-w-2xl"
+              className="text-lg md:text-xl text-lumex-dark/80 mb-10 max-w-2xl"
             >
               Websites, mobile apps, custom software, cybersecurity, and IT services — engineered for businesses
               ready to scale across Kenya and Africa.
@@ -94,7 +81,7 @@ const HeroSection = () => {
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="bg-white/5 backdrop-blur border-white/20 text-background hover:bg-white/15 text-base h-14 px-8">
+              <Button size="lg" variant="outline" asChild className="bg-background/80 backdrop-blur border-primary/30 text-lumex-dark hover:bg-background text-base h-14 px-8">
                 <Link to="/pricing-packages">View Pricing</Link>
               </Button>
             </motion.div>
@@ -162,10 +149,10 @@ const HeroSection = () => {
                 { number: 7, suffix: "+", label: "Years building" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <div className="text-3xl md:text-5xl font-bold text-secondary mb-1">
+                  <div className="text-3xl md:text-5xl font-bold text-primary mb-1">
                     <CountUp end={stat.number} suffix={stat.suffix} />
                   </div>
-                  <div className="text-sm text-background/60">{stat.label}</div>
+                  <div className="text-sm text-lumex-dark/75">{stat.label}</div>
                 </div>
               ))}
             </motion.div>
@@ -185,8 +172,6 @@ const HeroSection = () => {
                 style={{ transformStyle: "preserve-3d" }}
                 className="w-full h-full relative"
               >
-                <div className="absolute inset-0 rounded-full bg-secondary/30 blur-3xl" />
-                <div className="absolute inset-10 rounded-full bg-primary/30 blur-2xl" />
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 22, repeat: Infinity, ease: "linear" }}
