@@ -13,3 +13,4 @@
 - [x] Add a public help icon that sends help requests into LUMEX Messages in the admin panel.
 - [x] Make the homepage Software World banner button larger with clearer wording.
 - [x] Rebuild and package a fresh upload file for Netlify.
+- [x] Remove the website price line from the homepage banner.
