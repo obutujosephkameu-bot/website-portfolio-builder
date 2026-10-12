@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ExternalLink, Clock, GraduationCap, Users, ShoppingCart, Hotel, Stethoscope, Building2, Truck, Wallet, Boxes, ClipboardList, Download, Handshake, Banknote, LifeBuoy, Warehouse } from "lucide-react";
+import { ExternalLink, Clock, GraduationCap, Users, ShoppingCart, Hotel, Stethoscope, Building2, Truck, Wallet, Boxes, ClipboardList, Download, Handshake, Banknote, LifeBuoy, Warehouse, BookOpen } from "lucide-react";
 import FloatingBubbles from "@/components/effects/FloatingBubbles";
 import { Link } from "react-router-dom";
 import AdminAddedItems from "@/components/portfolio/AdminAddedItems";
@@ -23,6 +23,7 @@ const ready = [
 ];
 
 const coming = [
+  { name: "Education", desc: "E-learning, courses, students, exams & results.", url: "https://edu.softwareworld.co.ke/", Icon: BookOpen },
   { name: "POS & Retail", desc: "Point of sale for shops & supermarkets.", url: "https://pos.softwareworld.co.ke/", Icon: ShoppingCart },
   { name: "Accounting", desc: "Invoices, expenses, taxes, reports.", url: "https://accounting.softwareworld.co.ke/", Icon: Wallet },
   { name: "CRM", desc: "Customers, leads, follow-ups, sales pipeline.", url: "https://crm.softwareworld.co.ke/", Icon: Handshake },
