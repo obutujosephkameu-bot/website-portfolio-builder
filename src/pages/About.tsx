@@ -61,14 +61,22 @@ const About = () => (
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-3xl mx-auto bg-card border border-border rounded-2xl p-8 md:p-10 flex flex-col sm:flex-row items-center gap-8 text-center sm:text-left"
+          className="max-w-5xl mx-auto bg-card border border-border rounded-3xl overflow-hidden shadow-lumex-lg grid md:grid-cols-[minmax(0,340px)_1fr] lg:grid-cols-[minmax(0,420px)_1fr]"
         >
-          <img
-            src={founderPhoto}
-            alt="Josemaria M. Njeru, C.E.O and Founder of Lumex Digital and Software World"
-            className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-lumex-lg shrink-0"
-          />
-          <div>
+          <div className="relative w-full overflow-hidden aspect-[3/5] sm:aspect-[2/3] md:aspect-auto md:min-h-[700px] border-b md:border-b-0 md:border-r border-border bg-background">
+            <img
+              src={founderPhoto}
+              alt="Josemaria M. Njeru, C.E.O and Founder of Lumex Digital and Software World"
+              className="founder-zoom-out absolute inset-0 w-full h-full object-cover object-top"
+            />
+            <div
+              aria-hidden="true"
+              className="founder-zoom-wrap absolute inset-0 bg-lumex-dark"
+            />
+          </div>
+
+          <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-center text-center md:text-left">
+
             <h3 className="text-2xl font-bold">Josemaria M. Njeru</h3>
             <p className="text-secondary font-semibold mb-4">C.E.O &amp; Founder</p>
             <div className="space-y-4 text-muted-foreground">

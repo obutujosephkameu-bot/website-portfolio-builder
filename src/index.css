@@ -243,3 +243,47 @@
   }
 }
 
+
+/* Founder portrait: endless one-way zoom-out illusion.
+   The photo keeps shrinking forever; the loop point is hidden by a short
+   dim breath so it never appears to snap or zoom back. */
+@keyframes founder-zoom-out {
+  from {
+    transform: scale(1.45);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.founder-zoom-out {
+  animation: founder-zoom-out 26s linear infinite;
+  transform-origin: 50% 0%;
+  will-change: transform;
+}
+@keyframes founder-zoom-wrap {
+  0% {
+    opacity: 0.96;
+  }
+  6% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.96;
+  }
+}
+.founder-zoom-wrap {
+  animation: founder-zoom-wrap 26s linear infinite;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .founder-zoom-out,
+  .founder-zoom-wrap {
+    animation: none;
+  }
+  .founder-zoom-wrap {
+    opacity: 0;
+  }
+}
