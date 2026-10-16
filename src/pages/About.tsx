@@ -9,6 +9,8 @@ const values = [
   { Icon: Users, title: "People", desc: "A small senior team — no juniors learning on your dime." },
 ];
 
+import founderPhoto from "@/assets/founder.png";
+
 const About = () => (
   <Layout>
     <section className="py-24 container mx-auto px-4">
