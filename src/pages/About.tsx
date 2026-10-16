@@ -9,6 +9,8 @@ const values = [
   { Icon: Users, title: "People", desc: "A small senior team — no juniors learning on your dime." },
 ];
 
+import founderPhoto from "@/assets/founder.png";
+
 const About = () => (
   <Layout>
     <section className="py-24 container mx-auto px-4">
@@ -49,6 +51,33 @@ const About = () => (
             </motion.div>
           ))}
         </div>
+      </div>
+    </section>
+
+    <section className="py-20">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Leadership</h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-3xl mx-auto bg-card border border-border rounded-2xl p-8 md:p-10 flex flex-col sm:flex-row items-center gap-8 text-center sm:text-left"
+        >
+          <img
+            src={founderPhoto}
+            alt="Josemaria M. Njeru, C.E.O and Founder of Lumex Digital and Software World"
+            className="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-lumex-lg shrink-0"
+          />
+          <div>
+            <h3 className="text-2xl font-bold">Josemaria M. Njeru</h3>
+            <p className="text-secondary font-semibold mb-4">C.E.O &amp; Founder</p>
+            <p className="text-muted-foreground">
+              Founder and Chief Executive Officer of Lumex Digital and its software-building
+              department, Software World — leading the team behind every website, app, and system
+              we ship.
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   </Layout>
