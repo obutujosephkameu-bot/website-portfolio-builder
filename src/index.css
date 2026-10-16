@@ -257,6 +257,7 @@
 }
 .founder-zoom-out {
   animation: founder-zoom-out 26s linear infinite;
+  transform-origin: 50% 0%;
   will-change: transform;
 }
 @keyframes founder-zoom-wrap {
