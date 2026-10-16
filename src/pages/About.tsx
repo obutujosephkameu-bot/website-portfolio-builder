@@ -67,7 +67,7 @@ const About = () => (
             <img
               src={founderPhoto}
               alt="Josemaria M. Njeru, C.E.O and Founder of Lumex Digital and Software World"
-              className="absolute inset-0 w-full h-full object-cover object-top"
+              className="founder-zoom-out absolute inset-0 w-full h-full object-cover object-top"
             />
           </div>
           <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-center text-center md:text-left">
