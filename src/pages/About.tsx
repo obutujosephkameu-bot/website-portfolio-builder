@@ -63,7 +63,7 @@ const About = () => (
           viewport={{ once: true }}
           className="max-w-5xl mx-auto bg-card border border-border rounded-3xl overflow-hidden shadow-lumex-lg grid md:grid-cols-[minmax(0,340px)_1fr] lg:grid-cols-[minmax(0,420px)_1fr]"
         >
-          <div className="relative w-full aspect-[3/5] sm:aspect-[2/3] md:aspect-auto md:min-h-[700px] border-b md:border-b-0 md:border-r border-border bg-background">
+          <div className="relative w-full overflow-hidden aspect-[3/5] sm:aspect-[2/3] md:aspect-auto md:min-h-[700px] border-b md:border-b-0 md:border-r border-border bg-background">
             <img
               src={founderPhoto}
               alt="Josemaria M. Njeru, C.E.O and Founder of Lumex Digital and Software World"
