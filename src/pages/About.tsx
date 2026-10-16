@@ -69,7 +69,12 @@ const About = () => (
               alt="Josemaria M. Njeru, C.E.O and Founder of Lumex Digital and Software World"
               className="founder-zoom-out absolute inset-0 w-full h-full object-cover object-top"
             />
+            <div
+              aria-hidden="true"
+              className="founder-zoom-wrap absolute inset-0 bg-lumex-dark"
+            />
           </div>
+
           <div className="p-8 md:p-12 lg:p-14 flex flex-col justify-center text-center md:text-left">
 
             <h3 className="text-2xl font-bold">Josemaria M. Njeru</h3>
