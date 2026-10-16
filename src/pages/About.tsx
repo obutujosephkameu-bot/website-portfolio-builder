@@ -71,11 +71,32 @@ const About = () => (
           <div>
             <h3 className="text-2xl font-bold">Josemaria M. Njeru</h3>
             <p className="text-secondary font-semibold mb-4">C.E.O &amp; Founder</p>
-            <p className="text-muted-foreground">
-              Founder and Chief Executive Officer of Lumex Digital and its software-building
-              department, Software World — leading the team behind every website, app, and system
-              we ship.
-            </p>
+            <div className="space-y-4 text-muted-foreground">
+              <p>
+                Founder and Chief Executive Officer of Lumex Digital and its software-building
+                department, Software World — leading the team behind every website, app, and system
+                we ship.
+              </p>
+              <p>
+                A consummate visionary and indefatigable architect of digital transformation,
+                Josemaria M. Njeru established Lumex Digital in 2010 with an unwavering conviction:
+                that exemplary technology ought to be an accessible catalyst for prosperity rather
+                than an exclusive privilege of the few.
+              </p>
+              <p>
+                Under his perspicacious stewardship, the enterprise has burgeoned from a modest
+                undertaking into a formidable, multifaceted institution — one whose meticulously
+                engineered websites, enterprise systems, and cybersecurity solutions empower
+                schools, corporations, and merchants throughout Kenya and beyond.
+              </p>
+              <p>
+                Through Software World, he has championed an ethos of relentless innovation,
+                orchestrating sophisticated platforms for education, human-resource management, and
+                commerce. His leadership is distinguished by intellectual rigour, uncompromising
+                integrity, and a magnanimous dedication to mentoring the next generation of African
+                technologists.
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>
