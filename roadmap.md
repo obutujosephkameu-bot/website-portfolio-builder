@@ -18,4 +18,6 @@
 - [x] Rebuild and package a fresh upload file for Netlify.
 - [x] Remove the website price line from the homepage banner.
 - [x] Make the founder photo a large full-height portrait and add a one-way zoom-out effect that never zooms back.
+- [ ] Make the founder photo zoom continuously and forever while the page is open, with no visible snap-back.
+
 
