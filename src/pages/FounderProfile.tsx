@@ -61,12 +61,12 @@ export default function FounderProfile() {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-xl font-semibold mb-3">Registered business name in Kenya</h3>
-              <p className="text-muted-foreground leading-relaxed">According to the Certificate of Registration details supplied by Lumex Digital, the business name is registered in Kenya as <strong className="text-foreground">{founderProfile.businessName}</strong>.</p>
+              <p className="text-muted-foreground leading-relaxed">We are registered in Kenya under the business name <strong className="text-foreground">{founderProfile.businessName}</strong>.</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-3">Kenya Copyright Board registration</h3>
-              <p className="text-muted-foreground leading-relaxed">According to the certificate details supplied by Lumex Digital, the copyright work <strong className="text-foreground">“{founderProfile.copyright.title}”</strong> is registered in the <strong className="text-foreground">{founderProfile.copyright.category}</strong> category with the {founderProfile.copyright.authority}, registration number <strong className="text-foreground">{founderProfile.copyright.registrationNumber}</strong>.</p>
-              <p className="mt-3 text-sm text-muted-foreground">This registration concerns the logo’s copyright; it is not a government endorsement of the company or its services.</p>
+              <p className="text-muted-foreground leading-relaxed">Our logo, <strong className="text-foreground">“{founderProfile.copyright.title}”</strong>, is registered as a copyright work in the <strong className="text-foreground">{founderProfile.copyright.category}</strong> category with the {founderProfile.copyright.authority}, registration number <strong className="text-foreground">{founderProfile.copyright.registrationNumber}</strong>.</p>
+              <p className="mt-3 text-sm text-muted-foreground">This registration covers the logo’s copyright; it is not a government endorsement of Lumex Digital or its services.</p>
             </div>
           </div>
         </div>
