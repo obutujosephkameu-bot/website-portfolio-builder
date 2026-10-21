@@ -36,6 +36,8 @@ import SeoServicesKenya from "./pages/seo/SeoServicesKenya";
 import Blog from "./pages/seo/Blog";
 import ManagementSystemKenya from "./pages/seo/ManagementSystemKenya";
 import Careers from "./pages/Careers";
+import FounderProfile from "./pages/FounderProfile";
+import RouteCanonical from "@/components/seo/RouteCanonical";
 
 
 const queryClient = new QueryClient();
@@ -47,11 +49,13 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <RouteCanonical />
           <ScrollToTop />
           <Routes>
 
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
+            <Route path="/about/josemaria-m-njeru" element={<FounderProfile />} />
             <Route path="/services" element={<Services />} />
             <Route path="/pricing" element={<PricingPackages />} />
             <Route path="/pricing-packages" element={<PricingPackages />} />
