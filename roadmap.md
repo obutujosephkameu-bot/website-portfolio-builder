@@ -1,8 +1,8 @@
 # Roadmap
 
-- [ ] Add a Josemaria founder profile linked from About, with search metadata and sitemap entry.
-- [ ] Show supplied business-name and logo copyright registration details with accurate scope.
-- [ ] Verify the founder page and search information.
+- [x] Add a Josemaria founder profile linked from About, with search metadata and sitemap entry.
+- [x] Show supplied business-name and logo copyright registration details with accurate scope.
+- [x] Verify the founder page and search information.
 
 - [x] Replace the homepage banner background with the supplied image and verify visibility.
 - [x] Increase all website font sizes by 3 pixels, retaining the existing font families.
