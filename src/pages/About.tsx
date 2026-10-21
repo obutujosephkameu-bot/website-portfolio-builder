@@ -1,6 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import { motion } from "framer-motion";
 import { Target, Heart, Zap, Users } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const values = [
   { Icon: Target, title: "Precision", desc: "Every pixel, every line of code, considered." },
@@ -105,6 +107,9 @@ const About = () => (
                 technologists.
               </p>
             </div>
+            <Button asChild variant="outline" className="mt-6 self-center md:self-start">
+              <Link to="/about/josemaria-m-njeru">View Josemaria’s full profile</Link>
+            </Button>
           </div>
         </motion.div>
       </div>

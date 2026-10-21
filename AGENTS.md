@@ -1,5 +1,8 @@
 # Project decisions
 
+- Use a dedicated founder profile with shared identity/certificate data, ProfilePage/Person structured data, and sitewide Organization founder linkage so identity details stay consistent.
+- Keep one route-owned canonical through Helmet and use Helmet for new profile metadata; preserve static social fallback tags because this app remains client-rendered.
+
 - Resolve hosted banner asset pointers against the public Lovable origin so images also load on the external Netlify deployment.
 - Keep site-wide font-size adjustments in the Tailwind typography scale and shared custom-label utilities, preserving rem-based layout dimensions.
 
